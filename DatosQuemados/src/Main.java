@@ -1,6 +1,4 @@
 
-import java.util.ArrayList;
-import java.util.List;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -17,7 +15,8 @@ public class Main {
      */
     public static void main(String[] args) {
         listaUser list = new listaUser();
-
+        persona per = new persona(1, "A", "555-55-55", "Medellin");
+        list.modificarPersona(per);
     }
 
 }

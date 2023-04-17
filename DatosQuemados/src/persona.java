@@ -10,14 +10,17 @@ public class persona {
     String telefono;
     String ciudad;
 
+    public persona() {
+
+    }
+
     public persona(int id, String nombre, String telefono, String ciudad) {
         this.id = id;
         this.nombre = nombre;
         this.telefono = telefono;
         this.ciudad = ciudad;
-        imprimir();
+ 
     }
-
 
     public int getId() {
         return id;
@@ -48,14 +51,13 @@ public class persona {
     }
 
     public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;     
+        this.ciudad = ciudad;
     }
-        public void imprimir(){
-            System.out.println("************************************************");
-            System.out.println(id);
-            System.out.println(nombre);
-            System.out.println(telefono);
-            System.out.println(ciudad);
+
+    public void modificarPersona(persona per) {
+        setNombre(per.nombre);
+        setTelefono(per.telefono);
+        setCiudad(per.ciudad);
     }
- 
+
 }
